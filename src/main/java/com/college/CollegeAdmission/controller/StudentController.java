@@ -33,6 +33,7 @@ public class StudentController {
     @GetMapping ("/get")
     public ResponseEntity<Object> getAllStudents()
     {
+        System.out.println("hello ");
         List<Student> s2=studentService.getAllStudents();
         return ResponseEntity.ok(s2);
     }
